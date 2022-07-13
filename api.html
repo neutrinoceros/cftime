@@ -75,7 +75,7 @@ to the given datetime object(s).</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="cftime.date2num">
-<span class="sig-prename descclassname"><span class="pre">cftime.</span></span><span class="sig-name descname"><span class="pre">date2num</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dates</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">units</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_year_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.date2num" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">cftime.</span></span><span class="sig-name descname"><span class="pre">date2num</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dates</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">units</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_year_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">longdouble</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.date2num" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return numeric time values given datetime objects. The units
 of the numeric time values are described by the <strong>units</strong> argument
 and the <strong>calendar</strong> keyword. The datetime objects must
@@ -114,6 +114,11 @@ for the the idealized calendars the year zero
 always exists and the has_year_zero kwarg is ignored.
 This kwarg is not needed to define calendar systems allowed by CF
 (the calendar-specific defaults do this).</p>
+<p><strong>longdouble</strong>: If set True, output is in the long double float type
+(numpy.float128) instead of float (numpy.float64), allowing microsecond
+accuracy when converting a time value to a date and back again. Otherwise
+this is only possible if the discretization of the time variable is an
+integer multiple of the units.</p>
 <p>returns a numeric time value, or an array of numeric time values
 with approximately 1 microsecond accuracy.</p>
 </dd></dl>
