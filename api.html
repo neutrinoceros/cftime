@@ -199,6 +199,19 @@ string. For a complete list of formatting directives, see section
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="cftime.datetime.strptime">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">strptime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datestring</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'standard'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_year_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.datetime.strptime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a datetime corresponding to date_string, parsed according to format,
+with a specified calendar and year zero convention.
+The format directives ‘y’,’Y’,’m’,’B’,’b’,’d’,’H’,’M’,’S’ and ‘f’
+are supported for all calendars and dates.  If the date is valid
+in the python ‘proleptic_gregorian’ calendar, then python’s
+datetime.strptime is used. For a complete list of formatting directives
+supported in python’s datetime.strptime, see section
+‘strftime() and strptime() Behavior’ in the base Python documentation.</p>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="cftime.datetime.timetuple">
 <span class="sig-name descname"><span class="pre">timetuple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.datetime.timetuple" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a time.struct_time such as returned by time.localtime().
