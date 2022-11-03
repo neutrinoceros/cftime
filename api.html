@@ -14,6 +14,7 @@
     <script src="_static/underscore.js"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Installation" href="installing.html" />
@@ -126,7 +127,7 @@ with approximately 1 microsecond accuracy.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="cftime.datetime">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cftime.</span></span><span class="sig-name descname"><span class="pre">datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">year</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">month</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">day</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">hour=0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">minute=0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">second=0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">microsecond=0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">dayofwk=-1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">dayofyr=-1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar=u'standard'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_year_zero=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.datetime" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>This class mimics datetime.datetime but support calendars other than the proleptic
 Gregorian calendar.</p>
 <p>Supports timedelta operations by overloading +/-, and
@@ -363,7 +364,17 @@ are omitted. Compare to datetime.timetuple().</p>
 <h3>Navigation</h3>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="installing.html">Installation</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">API</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#cftime.date2index"><code class="docutils literal notranslate"><span class="pre">date2index()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cftime.date2num"><code class="docutils literal notranslate"><span class="pre">date2num()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cftime.datetime"><code class="docutils literal notranslate"><span class="pre">datetime</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cftime.is_leap_year"><code class="docutils literal notranslate"><span class="pre">is_leap_year()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cftime.num2date"><code class="docutils literal notranslate"><span class="pre">num2date()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cftime.num2pydate"><code class="docutils literal notranslate"><span class="pre">num2pydate()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cftime.time2index"><code class="docutils literal notranslate"><span class="pre">time2index()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cftime.to_tuple"><code class="docutils literal notranslate"><span class="pre">to_tuple()</span></code></a></li>
+</ul>
+</li>
 </ul>
 
 <div class="relations">
@@ -400,7 +411,7 @@ are omitted. Compare to datetime.timetuple().</p>
       &copy;2018, Jeff Whitaker.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.1.1</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
