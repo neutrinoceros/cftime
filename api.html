@@ -131,7 +131,7 @@ with approximately 1 microsecond accuracy.</p>
 <p>This class mimics datetime.datetime but support calendars other than the proleptic
 Gregorian calendar.</p>
 <p>Supports timedelta operations by overloading +/-, and
-comparisons with other instances using the same calendar.</p>
+comparisons with other instances (even if they use different calendars).</p>
 <p>Comparison with native python datetime instances is possible
 for cftime.datetime instances using
 ‘gregorian’ and ‘proleptic_gregorian’ calendars.</p>
