@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-content_root="./">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>API &#8212; cftime 1.0 documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=359c27e9"></script>
+    <script src="_static/documentation_options.js?v=f2a433a1"></script>
     <script src="_static/doctools.js?v=888ff710"></script>
-    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Installation" href="installing.html" />
@@ -31,10 +31,10 @@
           <div class="body" role="main">
             
   <section id="module-cftime">
-<span id="api"></span><h1>API<a class="headerlink" href="#module-cftime" title="Permalink to this heading">¶</a></h1>
+<span id="api"></span><h1>API<a class="headerlink" href="#module-cftime" title="Link to this heading">¶</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="cftime.date2index">
-<span class="sig-prename descclassname"><span class="pre">cftime.</span></span><span class="sig-name descname"><span class="pre">date2index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dates</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nctime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">select</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'exact'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_year_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.date2index" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">cftime.</span></span><span class="sig-name descname"><span class="pre">date2index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dates</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nctime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">select</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'exact'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_year_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.date2index" title="Link to this definition">¶</a></dt>
 <dd><p>Return indices of a netCDF time variable corresponding to the given dates.</p>
 <p><strong>dates</strong>: A datetime object or a sequence of datetime objects.
 The datetime objects should not include a time-zone offset.</p>
@@ -72,7 +72,7 @@ to the given datetime object(s).</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="cftime.date2num">
-<span class="sig-prename descclassname"><span class="pre">cftime.</span></span><span class="sig-name descname"><span class="pre">date2num</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dates</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">units</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_year_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">longdouble</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.date2num" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">cftime.</span></span><span class="sig-name descname"><span class="pre">date2num</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dates</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">units</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_year_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">longdouble</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.date2num" title="Link to this definition">¶</a></dt>
 <dd><p>Return numeric time values given datetime objects. The units
 of the numeric time values are described by the <strong>units</strong> argument
 and the <strong>calendar</strong> keyword. The datetime objects must
@@ -122,8 +122,8 @@ with approximately 1 microsecond accuracy.</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="cftime.datetime">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cftime.</span></span><span class="sig-name descname"><span class="pre">datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">year</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">month</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">day</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">hour=0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">minute=0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">second=0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">microsecond=0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">dayofwk=-1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">dayofyr=-1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar=u'standard'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_year_zero=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.datetime" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cftime.</span></span><span class="sig-name descname"><span class="pre">datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">year</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">month</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">day</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">hour=0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">minute=0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">second=0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">microsecond=0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">dayofwk=-1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">dayofyr=-1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar=u'standard'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_year_zero=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.datetime" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>This class mimics datetime.datetime but support calendars other than the proleptic
 Gregorian calendar.</p>
 <p>Supports timedelta operations by overloading +/-, and
@@ -161,12 +161,12 @@ instances.</p>
 (default %Y-%m-%d %H:%M:%S).</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="cftime.datetime.change_calendar">
-<span class="sig-name descname"><span class="pre">change_calendar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_year_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.datetime.change_calendar" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">change_calendar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_year_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.datetime.change_calendar" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="cftime.datetime.fromordinal">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fromordinal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jday</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'standard'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_year_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.datetime.fromordinal" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fromordinal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jday</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'standard'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_year_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.datetime.fromordinal" title="Link to this definition">¶</a></dt>
 <dd><p>Create a datetime instance from a julian day ordinal, calendar
 and (optionally) year zero convention (inverse of toordinal). The
 Julian day number is the number of days since noon UTC January 1, 4713
@@ -177,19 +177,19 @@ idealized calendars, the origin is noon UTC of the year zero.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="cftime.datetime.isoformat">
-<span class="sig-name descname"><span class="pre">isoformat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'T'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timespec</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'auto'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.datetime.isoformat" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">isoformat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'T'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timespec</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'auto'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.datetime.isoformat" title="Link to this definition">¶</a></dt>
 <dd><p>ISO date representation</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="cftime.datetime.replace">
-<span class="sig-name descname"><span class="pre">replace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.datetime.replace" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">replace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.datetime.replace" title="Link to this definition">¶</a></dt>
 <dd><p>Return datetime with new specified fields.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="cftime.datetime.strftime">
-<span class="sig-name descname"><span class="pre">strftime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.datetime.strftime" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">strftime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.datetime.strftime" title="Link to this definition">¶</a></dt>
 <dd><p>Return a string representing the date, controlled by an explicit format
 string. For a complete list of formatting directives, see section
 ‘strftime() and strptime() Behavior’ in the base Python documentation.</p>
@@ -197,7 +197,7 @@ string. For a complete list of formatting directives, see section
 
 <dl class="py method">
 <dt class="sig sig-object py" id="cftime.datetime.strptime">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">strptime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datestring</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'standard'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_year_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.datetime.strptime" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">strptime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datestring</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'standard'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_year_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.datetime.strptime" title="Link to this definition">¶</a></dt>
 <dd><p>Return a datetime corresponding to date_string, parsed according to format,
 with a specified calendar and year zero convention.
 The format directives ‘y’,’Y’,’m’,’B’,’b’,’d’,’H’,’M’,’S’ and ‘f’
@@ -210,7 +210,7 @@ supported in python’s datetime.strptime, see section
 
 <dl class="py method">
 <dt class="sig sig-object py" id="cftime.datetime.timetuple">
-<span class="sig-name descname"><span class="pre">timetuple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.datetime.timetuple" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">timetuple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.datetime.timetuple" title="Link to this definition">¶</a></dt>
 <dd><p>Return a time.struct_time such as returned by time.localtime().
 The DST flag is -1. d.timetuple() is equivalent to
 time.struct_time((d.year, d.month, d.day, d.hour, d.minute,
@@ -220,7 +220,7 @@ day number within the current year starting with 1 for January 1st.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="cftime.datetime.toordinal">
-<span class="sig-name descname"><span class="pre">toordinal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fractional</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.datetime.toordinal" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">toordinal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fractional</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.datetime.toordinal" title="Link to this definition">¶</a></dt>
 <dd><p>Return (integer) julian day ordinal.</p>
 <p>Day 0 starts at noon January 1 of the year -4713 for the
 julian, gregorian and standard calendars (year -4712 if year
@@ -237,7 +237,7 @@ False).</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="cftime.is_leap_year">
-<span class="sig-prename descclassname"><span class="pre">cftime.</span></span><span class="sig-name descname"><span class="pre">is_leap_year</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">year</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_year_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.is_leap_year" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">cftime.</span></span><span class="sig-name descname"><span class="pre">is_leap_year</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">year</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_year_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.is_leap_year" title="Link to this definition">¶</a></dt>
 <dd><p>returns <cite>True</cite> if specified year in specified calendar is
 a leap year. Optional kwarg <cite>has_year_zero</cite>
 controls whether astronomical year numbering
@@ -247,7 +247,7 @@ calendar-specific default is assumed.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="cftime.num2date">
-<span class="sig-prename descclassname"><span class="pre">cftime.</span></span><span class="sig-name descname"><span class="pre">num2date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">times</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">units</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'standard'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">only_use_cftime_datetimes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">only_use_python_datetimes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_year_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.num2date" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">cftime.</span></span><span class="sig-name descname"><span class="pre">num2date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">times</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">units</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'standard'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">only_use_cftime_datetimes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">only_use_python_datetimes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_year_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.num2date" title="Link to this definition">¶</a></dt>
 <dd><p>Return datetime objects given numeric time values. The units
 of the numeric time values are described by the <strong>units</strong> argument
 and the <strong>calendar</strong> keyword. The returned datetime objects represent
@@ -301,7 +301,7 @@ contains one.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="cftime.num2pydate">
-<span class="sig-prename descclassname"><span class="pre">cftime.</span></span><span class="sig-name descname"><span class="pre">num2pydate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">times</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">units</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'standard'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.num2pydate" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">cftime.</span></span><span class="sig-name descname"><span class="pre">num2pydate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">times</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">units</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'standard'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.num2pydate" title="Link to this definition">¶</a></dt>
 <dd><p>Always returns python datetime.datetime
 objects and raise an error if this is not possible.</p>
 <p>Same as
@@ -310,7 +310,7 @@ num2date(times,units,calendar,only_use_cftime_datetimes=False,only_use_python_da
 
 <dl class="py function">
 <dt class="sig sig-object py" id="cftime.time2index">
-<span class="sig-prename descclassname"><span class="pre">cftime.</span></span><span class="sig-name descname"><span class="pre">time2index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">times</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nctime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">select</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'exact'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.time2index" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">cftime.</span></span><span class="sig-name descname"><span class="pre">time2index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">times</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nctime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">select</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'exact'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.time2index" title="Link to this definition">¶</a></dt>
 <dd><p>Return indices of a netCDF time variable corresponding to the given times.</p>
 <p><strong>times</strong>: A numeric time or a sequence of numeric times.</p>
 <p><strong>nctime</strong>: A netCDF time variable object. The nctime object must have a
@@ -332,7 +332,7 @@ correspond to the closest times.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="cftime.to_tuple">
-<span class="sig-prename descclassname"><span class="pre">cftime.</span></span><span class="sig-name descname"><span class="pre">to_tuple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.to_tuple" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">cftime.</span></span><span class="sig-name descname"><span class="pre">to_tuple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.to_tuple" title="Link to this definition">¶</a></dt>
 <dd><p>Turn a datetime.datetime instance into a tuple of integers. Elements go
 in the order of decreasing significance, making it easy to compare
 datetime instances. Parts of the state that don’t affect ordering
@@ -407,7 +407,7 @@ are omitted. Compare to datetime.timetuple().</p>
       &copy;2018, Jeff Whitaker.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.1.1</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
       
       |
